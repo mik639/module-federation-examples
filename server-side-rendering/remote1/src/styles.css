@@ -1,0 +1,7 @@
+.header {
+    color: red;
+}
+
+.header::after {
+    content: "colorised from css file";
+}

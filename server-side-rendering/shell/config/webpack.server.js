@@ -1,6 +1,7 @@
 const path = require("path");
 const { merge } = require("webpack-merge");
 const shared = require("./webpack.shared");
+const LoadablePlugin = require('@loadable/webpack-plugin')
 const moduleFederationPlugin = require("./module-federation");
 
 module.exports = merge(shared, {
@@ -14,6 +15,7 @@ module.exports = merge(shared, {
   },
   mode: "production",
   plugins: [
+    new LoadablePlugin(),
     ...moduleFederationPlugin.server,
   ],
   stats: {

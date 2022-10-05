@@ -13,9 +13,12 @@
     "build:server": "rimraf dist/server && webpack --progress --config config/webpack.server.js"
   },
   "dependencies": {
+    "@loadable/babel-plugin": "^5.13.2",
+    "@loadable/component": "^5.15.2",
+    "@loadable/webpack-plugin": "^5.15.2",
     "express": "^4.17.1",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-helmet": "^6.0.0",
     "regenerator-runtime": "^0.13.2"
   },
